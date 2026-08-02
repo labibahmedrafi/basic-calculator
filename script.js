@@ -26,7 +26,11 @@ function backSpace() {
     }
 }
 function calculateResults() {
-    inputFieldEl.value = eval(inputFieldEl.value);
+    try {
+        inputFieldEl.value = eval(inputFieldEl.value);
+    } catch (error) {
+        inputFieldEl.value = "Error";
+    }
 }
 function appendValue(buttonValue) {
     inputFieldEl.value += buttonValue;
