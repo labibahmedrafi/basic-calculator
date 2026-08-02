@@ -42,7 +42,8 @@ button:hover {
     background-color: red;
     color: #fff;
 }
-.number, decimal {
+.number, 
+.decimal {
     background-color: #fff;
     color: #333;
 }
